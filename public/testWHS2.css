@@ -1,0 +1,161 @@
+
+body {
+	min-height: 100vh;  /* need this line to 
+					tell body to fill viewport */
+	font-family: 'Montserrat', sans-serif;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	color: blue;
+     }
+
+header {
+       text-align: center;
+	   padding: 20px;
+	   font-size: 50px;
+}
+
+main{
+	background-color: rgba(216, 205, 205, 0.664);
+	font-family: 'Open Sans', sans-serif;
+	color: black;
+}
+
+#query{
+	text-align: center;
+	
+	
+}
+
+#top-header-container{
+	overflow: hidden;
+	position:relative;
+}
+
+#top-header-container #num{
+	border: 1px solid black;
+	overflow: hidden; 
+	height: 20px;
+	width: 40%;
+	display: inline-block;
+	padding: 10px 15px;
+	font-size: 20px;
+	-webkit-appearance: none;
+}
+
+#top-header-container .submit-button{
+	border: transparent;
+	position:relative;
+	overflow: hidden;
+	display: inline-block;
+	padding: 10px 15px;
+	font-size: 20px;
+	border-radius: 0;
+	-webkit-appearance: none;
+}
+
+
+#top-header-container #website-name{
+	float: left;
+	display: block;
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: rgb(30, 196, 188);
+	font-weight: bold;
+	font-size: 50px;
+}
+
+main {
+     flex: 1 0 auto;  /* the sticky footer trick without the footer */
+}
+
+
+input {
+	border-style: solid;
+	border-radius: 5px;
+	font-size: medium;
+}
+
+
+p {
+	font-size: medium;
+	margin: 10px;
+}
+
+div#photoDisplay {
+    width: 400px;
+    margin: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+.tag {
+	display: inline-block;
+	background-color: gray;
+	padding: 10px 25px;
+	border-radius: 5px;
+	color: white;
+	margin-right: 5px;
+}
+
+.tag span {
+	margin-right: 3px;
+}
+
+.tag button {
+	background:none;
+	color: white;
+	border: none;
+	font-size: 17px;
+}
+
+
+.tagInput {
+	display: inline-block;
+	width:100px;
+	border: 1px solid black
+}
+
+.tagInput input[type="text"]{
+    background: transparent;
+    border: none;
+}
+
+.tagInput button {
+	background:none;
+	color: white;
+	border: none;
+	font-size: 17px;
+}
+
+.relatedTag {
+	display: inline-block;
+	font-size: 17px;
+	padding: 5px 10px;
+	background-color: gray;
+	margin-right: 5px;
+	border-radius: 5px;
+}
+
+
+@media(max-width: 460px ){
+	#search-icon{
+		float: right;
+		position: relative;
+	}
+
+	#top-header-container #num{
+		display: none;
+	}
+	#top-header-container .submit-button{
+		background: none;
+	}
+}
+
+@media(min-width: 461px){
+	#top-header-container #num{
+		display: inline-block;
+	}
+}

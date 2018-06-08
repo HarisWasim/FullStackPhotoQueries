@@ -1,0 +1,49 @@
+<!doctype HTML>
+<html>
+
+<head>
+  <title>Web page for testing</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="http://web.cs.ucdavis.edu/~amenta/s18/reset.css">
+  <link rel="stylesheet" type="text/css" href="testWHS2.css">
+  <link href="https://fonts.googleapis.com/css?family=Kavivanar|Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+        integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+</head>
+
+<body>
+  
+  <header id = "top-header-container">
+    <h1 id="website-name">PHOTOQ</h1>
+    
+    <div id="query">
+        <input id="num" placeholder="1, 244, 12, 90, 32" onkeyup="autoCompletion()">
+        <button onclick="photoByNumber();" id="search-icon" class="fas fa-search submit-button"></button>
+      </div>
+      
+    
+  </header>
+  
+  
+  <main>
+    
+    <div id="container">
+      <img id="photoImg">
+    </div>
+ 
+    
+  </main>
+  
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script src="https://unpkg.com/react@15/dist/react.js"></script> 
+  <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+  <!-- The Javascript for this page -->
+  <script src="prop-types.js"></script>
+  <script src="react-photo-gallery.js"></script>
+  <script type="text/babel" src="./testWHS2.js"></script>
+</body>
+
+</html>
